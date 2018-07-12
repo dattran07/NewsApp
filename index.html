@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app='newApp'>
+
+<head>
+  <meta charset="utf-8">
+  <title>NewsApp</title>
+  <link rel="shortcut icon" href="#" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <img class="logo" src="./img/icon.png">
+    <h1 class="hidden-title">DevMountain's News Website</h1>
+    <div class='navbar'>
+      <div class='links'>
+        <a ui-sref="home" i class="fa fa-home" style="text-decoration:none; color: white; font-size: 27px">Home</a> &nbsp;
+        <a ui-sref="game" i class="fa fa-gamepad" style="text-decoration:none; color: white; font-size: 27px">Gaming</a> &nbsp;
+        <a ui-sref="music" i class="fa fa-music" style="text-decoration:none; color: white; font-size: 27px">Music</a> &nbsp;
+        <a ui-sref="news" i class="fa fa-newspaper-o" style="text-decoration:none; color: white; font-size: 27px">News</a> &nbsp;
+        <a ui-sref="sport" i class="fa fa-futbol-o" style="text-decoration:none; color: white; font-size: 27px">Sport</a> &nbsp;
+        <a ui-sref="technology" i class="fa fa-pied-piper-alt" style="text-decoration:none; color: white; font-size: 27px">Technology</a>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">☰</button>
+        <div class="dropdown-content">
+          <a ui-sref="home" i class="fa fa-home" style="text-decoration:none; color: white; font-size: 27px">Home</a>
+          <a ui-sref="game" i class="fa fa-gamepad" style="text-decoration:none; color: white; font-size: 27px">Gaming</a>
+          <a ui-sref="music" i class="fa fa-music" style="text-decoration:none; color: white; font-size: 27px">Music</a>
+          <a ui-sref="news" i class="fa fa-newspaper-o" style="text-decoration:none; color: white; font-size: 27px">News</a>
+          <a ui-sref="sport" i class="fa fa-futbol-o" style="text-decoration:none; color: white; font-size: 27px">Sport</a>
+          <a ui-sref="technology" i class="fa fa-pied-piper-alt" style="text-decoration:none; color: white; font-size: 27px">Technology</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img class="rubybar" src="./img/dArppFI.jpg">
+
+  <ui-view></ui-view>
+
+  <!--Script Files-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/directives/mainDirective.js"></script>
+  <script src="./js/services/mainService.js"></script>
+  <script src="./js/controllers/gameController.js"></script>
+  <script src="./js/controllers/musicController.js"></script>
+  <script src="./js/controllers/newController.js"></script>
+  <script src="./js/controllers/sportController.js"></script>
+  <script src="./js/controllers/techController.js"></script>
+
+</body>
+
+</html>

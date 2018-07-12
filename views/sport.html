@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="../css/sport.css">
+
+<div class='pho-sho'>
+  <div ng-repeat='sport in data' class='container'>
+    <img  class='image-size' ng-src='{{sport.urlToImage}}'> <br>
+    <div class='adjustfontcolor'>
+      <span class='title'><a href="{{sport.url}}" target="_blank" style="text-decoration:none; color: white"> {{sport.title}} </a>  <br> </span>
+      <span class='description'>{{sport.description}} </span>
+    </div>
+  </div>
+</div>

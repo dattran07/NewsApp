@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="../css/game.css">
+<div class='pho-sho'>
+
+  <div ng-repeat='games in data' class='container'>
+    <img  class='image-size' ng-src='{{games.urlToImage}}'> <br>
+    <div class='adjustfontcolor'>
+      <span class='title'><a href="{{games.url}}" target="_blank" style="text-decoration:none; color: white"> {{games.title}} </a>  <br> </span>
+      <span class='description'>{{games.description}} </span>
+    </div>
+  </div>
+</div>

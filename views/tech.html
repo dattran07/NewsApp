@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="../css/tech.css">
+
+<div class='pho-sho'>
+  <div ng-repeat='tech in data' class='container'>
+    <img  class='image-size' ng-src='{{tech.urlToImage}}'> <br>
+    <div class='adjustfontcolor'>
+      <span class='title'><a href="{{tech.url}}" target="_blank" style="text-decoration:none; color: white"> {{tech.title}} </a>  <br> </span>
+      <span class='description'>{{tech.description}} </span>
+    </div>
+  </div>
+</div>

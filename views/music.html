@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="../css/music.css">
+
+<div class='pho-sho'>
+  <div ng-repeat='musics in data' class='container'>
+    <img class='image-size' ng-src='{{musics.urlToImage}}'> <br>
+    <div class='adjustfontcolor'>
+      <span class='title'><a href="{{musics.url}}" target="_blank" style="text-decoration: none; color: white"> {{musics.title}} </a>  <br> </span>
+      <span class='description'>{{musics.description}} </span>
+    </div>
+  </div>
+
+</div>

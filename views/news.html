@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="../css/news.css">
+
+<div class='pho-sho'>
+  <div ng-repeat='news in data' class='container'>
+    <img  class='image-size' ng-src='{{news.urlToImage}}'> <br>
+    <div class='adjustfontcolor'>
+      <span class='title'><a href="{{news.url}}" target="_blank" style="text-decoration:none; color: white"> {{news.title}} </a>  <br> </span>
+      <span class='description'>{{news.description}} </span>
+    </div>
+  </div>
+</div>
