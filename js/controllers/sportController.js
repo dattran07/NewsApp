@@ -11,10 +11,6 @@ angular.module('newApp').controller('sportCtrl', function($scope, mainSrvc) {
       response.data.articles.forEach(function(current){$scope.data.push(current)});
     });
 
-    mainSrvc.getSport3().then(function(response) {
-      response.data.articles.forEach(function(current){$scope.data.push(current)});
-    });
-
   }
 
   $scope.getSport();

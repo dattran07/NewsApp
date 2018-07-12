@@ -28,13 +28,6 @@ angular.module('newApp').service('mainSrvc', function($http) {
     })
   };
 
-  this.getNew3 = function() {
-    return $http({
-      method: 'GET',
-      url: 'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=32ae23cd5e7743ff9289cf2702fe3e16'
-    })
-  };
-
   this.getSport = function() {
     return $http({
       method: 'GET',
@@ -46,13 +39,6 @@ angular.module('newApp').service('mainSrvc', function($http) {
     return $http({
       method: 'GET',
       url: 'https://newsapi.org/v1/articles?source=the-sport-bible&sortBy=top&apiKey=32ae23cd5e7743ff9289cf2702fe3e16'
-    })
-  };
-
-  this.getSport3 = function() {
-    return $http({
-      method: 'GET',
-      url: 'https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=32ae23cd5e7743ff9289cf2702fe3e16'
     })
   };
 
