@@ -36,7 +36,7 @@ angular.module('newApp', ['ui.router'])
       })
       .state('technology', {
         url: '/technology',
-        templateUrl: "../views/tech.html",
+        templateUrl: "./views/tech.html",
         controller: 'techCtrl'
       })
       .state('random', {
