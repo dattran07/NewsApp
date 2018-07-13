@@ -46,6 +46,28 @@ a:hover {
   display: none;
 }
 
+.adjustfontcolor {
+  color: white;
+}
+
+.image-size {
+  height: 70%;
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+  width: 43vw;
+}
+
+.title {
+  font-size: 35px;
+}
+
+.description {
+  font-size: 18px;
+}
+
 @media (max-width: 900px) {
   .links {
     display: none;
@@ -112,33 +134,63 @@ a:hover {
   color: white;
 }
 
-.container {
+.home-container {
   display: inline-block;
   width: 100%;
 }
 
-.title1 {
+.home-title1 {
   font-size: 40px;
 }
 
-.title2 {
+.home-title2 {
   font-size: 100px;
   margin-top: -50px;
   -webkit-margin-after: 30px;
 }
 
-.button {
+.home-button {
   width: 300px;
   height: 40px;
   margin-bottom: 220px;
   font-size: 23px;
 }
 
-button:hover {
+.home-button:hover {
   background-color: rgb(189,212,54);
   cursor: pointer;
 }
 
-a:hover {
-  border-bottom: 3px solid rgb(189,212,54);
+/* game css */
+.game-bg {
+  background: url("../img/cs-go-background.jpg");
+  background-size:contain;
+}
+
+/* music css */
+.music-bg {
+  background: url("../img/rap-background-music-rap-music-background-30.jpeg");
+  background-size: contain;
+}
+
+.music-title {
+  font-size: 34px;
+}
+
+/* news css */
+.news-bg {
+  background: url("../img/3jQbonO.jpg");
+  background-size: contain;
+}
+
+/* sport css */
+.sport-bg {
+  background: url("../img/black3.jpg");
+  background-size: contain;
+}
+
+/* tech css */
+.tech-bg {
+  background: url("../img/wallpapers-cool-black-background-wallpaper.jpg");
+  background-size: contain;
 }
